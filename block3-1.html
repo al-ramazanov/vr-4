@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vr</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20221205182024" /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20221206075217" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap&_v=20221205182024"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap&_v=20221206075217"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css?_v=20221205182024">
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css?_v=20221206075217">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20221205182024">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221206075217">
 
 </head>
 
@@ -24,7 +24,7 @@
 <header class="header-store header-store-new">
 
   <div class="header-top">
-    <div class="container-large header__container">
+    <div class="container-large">
       <div class="row align-horisontal-between align-vertical-center header-top__row">
         <a href="https://new.virtuality-club.com/" class="logo">
           <img width="200" height="22" loading="lazy" src="./images/logo.svg" alt="logo">
@@ -33,7 +33,7 @@
         <div class="site-search js-site-search hidden-tablet">
           <form class="search-form" action="/search/">
             <div class="search-form__group">
-              <input type="text" class="search-form__input b-radius-7" placeholder="Поиск по сайту ..." name="search"
+              <input type="text" class="search-form__input b-radius-7" placeholder="Поиск по услугам ..." name="search"
                 required="">
               <button class="search-form__btn" type="submit">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@
         <div class="header-contacts">
           <div class="row align-horisontal-end align-vertical-center header-contacts__row row-nowrap">
 
-            <div class="header-contacts__item bordered hidden-mobile search_button_icon">
+            <div class="header-contacts__item hidden-mobile search_button_icon">
               <button class="btn-search btn-search__sm js-toggle-site-search-btn" type="button">
                 <svg viewBox="0 0 15 22" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -70,8 +70,7 @@
             </div>
 
             <div class="header-contacts__item hidden-tablet head-work_time">
-              <p class="worktime ic-block ic-block__worktime"><span class="bordered">Режим работы</span>
-              </p>
+              <div class="worktime ic-block ic-block__worktime"><span>Режим работы</span></div>
             </div>
             <div class="header-contacts__item">
               <a href="tel:+74994041391" class="phone-link ic-block ic-block__phone"><span>
@@ -92,7 +91,7 @@
   </div>
   <!-- //header top -->
   <div class="header-bottom color-bg" id="head_panel" style="position: relative;">
-    <div class="container-large header__container">
+    <div class="container-large">
       <div class="row align-horisontal-between align-vertical-center header-bottom__row row-nowrap">
         <!-- Catalog btn -->
         <button class="btn-catalog js-open-catalog-menu-btn b-radius-7" type="button">
@@ -244,30 +243,38 @@
           </div>
           <div class="header-tools__item--col">
             <div class="header-tools__item">
-              <a href="#" class="header-tools__link dropdown-menu">
-                <span class="header-tools__link--text">Помощь</span>
-                <span class="header-tools__link--ic">
-                  <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_2212_10443)">
-                      <path
-                        d="M19.2816 4.10719C15.2116 0.0371875 8.56781 0.0371875 4.49781 4.10719C0.427812 8.17719 0.427812 14.821 4.49781 18.891C8.56781 22.961 15.2116 22.961 19.2816 18.891C23.3516 14.8218 23.3516 8.17719 19.2816 4.10719ZM20.7769 14.4472L17.4331 13.3248C17.8293 12.1372 17.8293 10.8386 17.4331 9.65106L20.7769 8.5287C21.3931 10.4657 21.3931 12.5334 20.7769 14.4471V14.4472ZM3.00157 8.55185L6.34535 9.6742C5.94917 10.8618 5.94917 12.1604 6.34535 13.348L3.00157 14.4703C2.38539 12.5333 2.38539 10.4657 3.00157 8.55189V8.55185ZM8.54535 14.8434C6.6977 12.9958 6.6977 9.98097 8.54535 8.13341C10.393 6.28576 13.4078 6.28576 15.2554 8.13341C17.103 9.98106 17.103 12.9958 15.2554 14.8434C13.3854 16.6919 10.3929 16.6919 8.54535 14.8434ZM14.8369 2.61185L13.7146 5.95563C12.5269 5.55945 11.2283 5.55945 10.0408 5.95563L8.91843 2.61185C10.8555 1.99567 12.9231 1.99567 14.8369 2.61185H14.8369ZM8.94157 20.3872L10.0639 17.0434C11.2516 17.4396 12.5501 17.4396 13.7377 17.0434L14.8601 20.3872C12.923 21.0034 10.8554 21.0034 8.94162 20.3872H8.94157Z"
-                        fill="white"></path>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2212_10443">
-                        <rect width="22" height="22" fill="white" transform="translate(0.888672 0.5)"></rect>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <div class="dropdown-head">
-                  <div class="dropdown-head__body">
-                    <div class="dropdown-item">FAQ</div>
-                    <div class="dropdown-item">Статьи</div>
-                    <div class="dropdown-item">Инструкции</div>
-                  </div>
+              <div class="dropdown-wrapper dropdown-wrapper-new">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle header-tools__link">
+                  <span class="header-tools__link--text">Помощь</span>
+                  <span class="header-tools__link--ic">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2212_10443)">
+                        <path
+                          d="M19.2816 4.10719C15.2116 0.0371875 8.56781 0.0371875 4.49781 4.10719C0.427812 8.17719 0.427812 14.821 4.49781 18.891C8.56781 22.961 15.2116 22.961 19.2816 18.891C23.3516 14.8218 23.3516 8.17719 19.2816 4.10719ZM20.7769 14.4472L17.4331 13.3248C17.8293 12.1372 17.8293 10.8386 17.4331 9.65106L20.7769 8.5287C21.3931 10.4657 21.3931 12.5334 20.7769 14.4471V14.4472ZM3.00157 8.55185L6.34535 9.6742C5.94917 10.8618 5.94917 12.1604 6.34535 13.348L3.00157 14.4703C2.38539 12.5333 2.38539 10.4657 3.00157 8.55189V8.55185ZM8.54535 14.8434C6.6977 12.9958 6.6977 9.98097 8.54535 8.13341C10.393 6.28576 13.4078 6.28576 15.2554 8.13341C17.103 9.98106 17.103 12.9958 15.2554 14.8434C13.3854 16.6919 10.3929 16.6919 8.54535 14.8434ZM14.8369 2.61185L13.7146 5.95563C12.5269 5.55945 11.2283 5.55945 10.0408 5.95563L8.91843 2.61185C10.8555 1.99567 12.9231 1.99567 14.8369 2.61185H14.8369ZM8.94157 20.3872L10.0639 17.0434C11.2516 17.4396 12.5501 17.4396 13.7377 17.0434L14.8601 20.3872C12.923 21.0034 10.8554 21.0034 8.94162 20.3872H8.94157Z"
+                          fill="white"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2212_10443">
+                          <rect width="22" height="22" fill="white" transform="translate(0.888672 0.5)"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+                <div class="dropdown-menu hidden-tablet">
+                  <ul>
+                    <li>
+                      <a class="dropdown-item" href="">FAQ</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Статьи</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item none-border" href="">Инструкции</a>
+                    </li>
+                  </ul>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
 
@@ -330,7 +337,7 @@
     <!-- //container -->
   </div>
   <!-- //header bottom -->
-  <div class="catalog-menu js-catalog-menu" style="margin-top: 90px;">
+  <div class="catalog-menu js-catalog-menu" style="margin-top: 126px;">
     <div class="container">
 
       <p class="catalog-menu__title catalog-menu__title-mobile">Каталог</p>
@@ -361,10 +368,10 @@
               <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
                 <div class="os-resize-observer"></div>
               </div>
-              <div class="os-content-glue" style="margin: 0px 0px 0px -15px; width: 337px; height: 593px;"></div>
+              <div class="os-content-glue" style="margin: 0px; width: 429px; height: 821px;"></div>
               <div class="os-padding">
                 <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
-                  <div class="os-content" style="padding: 0px 0px 0px 15px; height: 100%; width: 100%;">
+                  <div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
                     <nav class="catalog-menu__nav">
                       <ul>
                         <li data-id="270" class="is-active">
@@ -801,7 +808,7 @@
               </div>
               <div class="os-scrollbar os-scrollbar-vertical">
                 <div class="os-scrollbar-track os-scrollbar-track-off">
-                  <div class="os-scrollbar-handle" style="height: 54.797%; transform: translate(0px, 0px);"></div>
+                  <div class="os-scrollbar-handle" style="height: 67.1569%; transform: translate(0px, 0px);"></div>
                 </div>
               </div>
               <div class="os-scrollbar-corner"></div>
@@ -815,7 +822,7 @@
             <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
               <div class="os-resize-observer"></div>
             </div>
-            <div class="os-content-glue" style="margin: 0px -15px 0px 0px; height: 593px; width: 832px;"></div>
+            <div class="os-content-glue" style="margin: 0px -15px 0px 0px; height: 639px; width: 917px;"></div>
             <div class="os-padding">
               <div class="os-viewport os-viewport-native-scrollbars-invisible">
                 <div class="os-content" style="padding: 0px 15px 0px 0px; height: auto; width: 100%;">
@@ -1428,7 +1435,7 @@
                   <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
                     <div class="os-resize-observer"></div>
                   </div>
-                  <div class="os-content-glue" style="margin: 0px 0px 0px -15px; width: 337px; height: 535px;"></div>
+                  <div class="os-content-glue" style="margin: 0px 0px 0px -15px; width: 387px; height: 603px;"></div>
                   <div class="os-padding">
                     <div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;">
                       <div class="os-content" style="padding: 0px 0px 0px 15px; height: 100%; width: 100%;">
@@ -1869,8 +1876,7 @@
                   </div>
                   <div class="os-scrollbar os-scrollbar-vertical">
                     <div class="os-scrollbar-track os-scrollbar-track-off">
-                      <div class="os-scrollbar-handle" style="height: 49.4465%; transform: translate(0px, 0px);">
-                      </div>
+                      <div class="os-scrollbar-handle" style="height: 48.5531%; transform: translate(0px, 0px);"></div>
                     </div>
                   </div>
                   <div class="os-scrollbar-corner"></div>
@@ -1884,7 +1890,7 @@
                 <div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
                   <div class="os-resize-observer"></div>
                 </div>
-                <div class="os-content-glue" style="margin: 0px -15px 0px 0px; height: 535px; width: 830px;"></div>
+                <div class="os-content-glue" style="margin: 0px -15px 0px 0px; height: 603px; width: 915px;"></div>
                 <div class="os-padding">
                   <div class="os-viewport os-viewport-native-scrollbars-invisible">
                     <div class="os-content" style="padding: 0px 15px 0px 0px; height: auto; width: 100%;">
@@ -3696,13 +3702,13 @@
   </div>
 </footer>
 </div>
-<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20221205182024"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221205182024"
+<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20221206075217"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20221206075217"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script src="js/libs.min.js?_v=20221205182024"></script>
-<script src="js/common.min.js?_v=20221205182024"></script>
-<script src="js/isWebp.js?_v=20221205182024"></script>
-<script src="js/main.js?_v=20221205182024"></script>
+<script src="js/libs.min.js?_v=20221206075217"></script>
+<script src="js/common.min.js?_v=20221206075217"></script>
+<script src="js/isWebp.js?_v=20221206075217"></script>
+<script src="js/main.js?_v=20221206075217"></script>
 </body>
 
 </html>
